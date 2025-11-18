@@ -1,0 +1,13 @@
+@use 'helpers' as *;
+
+body {
+	font-family: var(--font-family);
+	font-size: rem(16);
+  background-color: var(--white);
+  transition-duration: .2s;
+  overflow-inline: hidden;
+  min-height: 100vh;
+  a {
+    color: var(--black);
+  }
+}

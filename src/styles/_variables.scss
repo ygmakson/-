@@ -1,0 +1,21 @@
+@use 'helpers' as *;
+
+:root {
+  // -- Container --
+  --container-width: #{fluid(1376, 380)};
+  --container-padding-x: 10px;
+
+  // -- Fonts --
+  --font-family: "Montserrat", sans-serif;
+
+  // -- Colors --
+  --black: #0f0f0f;
+  --white: #f4f4f4;
+  --gray: #e4e4e4;
+  --beige: #ffa53f;
+
+  // -- Color-gradients --
+
+
+  // -- Border-radiuses --
+}
