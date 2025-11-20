@@ -13,7 +13,17 @@
   --white: #f4f4f4;
   --gray: #e4e4e4;
   --beige: #ffa53f;
+  --beige-lite: rgba(255, 165, 63, 0.3);
+  --gray-lite: rgba(228, 228, 228, 0.5);
 
+  .isDark {
+    --black: #f4f4f4;
+    --white: #0f0f0f;
+    --gray: #e4e4e4;
+    --beige: #ffa53f;
+    --beige-lite: rgba(255, 165, 63, 0.3);
+    --gray-lite: rgba(228, 228, 228, 0.7);
+  }
   // -- Color-gradients --
 
 

@@ -16,12 +16,14 @@ defineProps({
 
 <style scoped lang="scss">
 @use '@/styles/helpers' as *;
+
 .hero {
   height: 100vh;
   width: 100vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: #f4f4f4;
   &__inner {
     height: 100%;
     display: flex;
@@ -30,13 +32,9 @@ defineProps({
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: fluid(64, 40);
     white-space: wrap;
     font-weight: 600;
     text-transform: uppercase;
-  }
-  &__title {
-    color: var(--white);
   }
 }
 </style>

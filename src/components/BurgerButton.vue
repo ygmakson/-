@@ -46,7 +46,9 @@ function openBurger() {
   }
 }
 .burgerClose {
+  transition-duration: .2s;
   span {
+    transition-duration: .2s;
     &:last-child {
       transform: scaleX(0);
     }

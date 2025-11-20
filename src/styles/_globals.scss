@@ -1,13 +1,34 @@
 @use 'helpers' as *;
 
 body {
-	font-family: var(--font-family);
-	font-size: rem(16);
+  font-family: var(--font-family);
+  font-size: rem(16);
   background-color: var(--white);
   transition-duration: .2s;
   overflow-inline: hidden;
   min-height: 100vh;
+  color: var(--black);
   a {
     color: var(--black);
+    transition: all .2s;
+    @include hover {
+      color: var(--beige);
+    }
+  }
+  h1 {
+    font-size: fluid(64, 40);
+    font-weight: 700;
+  }
+  h2 {
+    font-size: fluid(40, 24);
+    font-weight: 700;
+  }
+  h3 {
+    font-size: fluid(36, 16);
+    font-weight: 600;
+  }
+  h4 {
+    font-size: fluid(24, 18);
+    font-weight: 600;
   }
 }

@@ -4,9 +4,22 @@ import Search from '@/assets/images/icons/search.svg'
 import Favorite from '@/assets/images/icons/favorite.svg'
 import ShoppingCart from '@/assets/images/icons/shopping-cart.svg'
 import Profile from '@/assets/images/icons/profile.svg'
+import Moon from '@/assets/images/icons/moon.svg'
 import {useRoute} from "vue-router";
 import {ref} from "vue";
 import BurgerButton from "@/components/BurgerButton.vue";
+
+const darkIsActive = ref(false)
+
+
+function setDarkTheme() {
+  darkIsActive.value = !darkIsActive.value
+  console.log(darkIsActive.value)
+  const body = document.querySelector('body')
+  body.classList.toggle('isDark')
+}
+
+
 
 const pages = [
   {name: 'главная', path: '/'},
@@ -35,6 +48,7 @@ function openBurgerMenu(state) {
           >{{page.name}}</router-link>
         </nav>
         <div class="header__buttons">
+          <button @click="setDarkTheme"><Moon class="header__buttons-icon"/></button>
           <button><Search class="header__buttons-icon"/></button>
           <button><Favorite class="header__buttons-icon"/></button>
           <button><ShoppingCart class="header__buttons-icon"/></button>
@@ -91,12 +105,14 @@ function openBurgerMenu(state) {
     &__logo {
       width: #{fluid(158, 108)};
       height: auto;
+      fill: var(--black);
     }
     &__buttons {
       display: flex;
       align-items: center;
       gap: 1rem;
       &-icon{
+        fill: var(--black);
         transition-duration: .2s;
         @include hover() {
           fill: var(--beige);
